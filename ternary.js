@@ -5,17 +5,39 @@ console.log(food);
 
 // Short Cut Else If
 
-const money = 70
-let food;
+const money1 = 70
+let food1;
 
-if (money > 50) {
-    food= 'tea with bread'
+if (money1 > 50) {
+    food1= 'tea with bread'
 }else{
-    food = 'only a cup o tea'
+    food1 = 'only a cup o tea'
 }
-console.log(food);
+console.log(food1);
 
 // with ShortCut
 //Important Note:  First Condition then ?(question Symbol) then truthy Value and then :(colon) and last falsy Value
-let food = money > 50 ? 'Tea with bread': 'Only Cup of tea'
-console.log(food);
+let food3 = money > 50 ? 'Tea with bread': 'Only Cup of tea'
+console.log(food3);
+
+// Function if Else
+
+const active = true
+
+// let cssClass = active? 'Active':'inactive'
+// console.log(cssClass);
+
+function displayUser(){
+    console.log("i am active");
+}
+function closeUser(){
+    console.log("i am not active");
+}
+let findActive = active ? displayUser():closeUser();
+console.log(findActive);
+
+// One Line
+const stay = false
+
+let show = stay && 5
+console.log(show); 
