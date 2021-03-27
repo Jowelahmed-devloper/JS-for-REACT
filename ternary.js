@@ -41,3 +41,20 @@ const stay = false
 
 let show = stay && 5
 console.log(show); 
+
+// String to Number
+
+const number = +"45"
+console.log(number);
+
+// number to String
+const num = 46 + ''
+console.log(typeof num);
+
+// Function default VAlue
+function add (num1, num2){
+    num2 = num2 || 20
+    return num1 + num2;
+}
+const result = add(12, 30)
+console.log(result);
