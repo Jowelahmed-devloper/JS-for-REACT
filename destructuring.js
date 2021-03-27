@@ -17,3 +17,10 @@ console.log(x,y);
  }
  const arr = makeArray(10)
  console.log(arr);
+
+//  Array Destructuring
+function createArray(num2){
+    return [num2, num2*2]
+}
+const [box1, box2] = createArray(3)
+console.log(box1, box2);
